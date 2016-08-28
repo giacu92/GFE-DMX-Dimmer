@@ -3,6 +3,7 @@ DIY 12 channels dmx dimmer for 4 stage halogen lights
 
 * Author: Giacomo Mammarella
 * email: giacomo.mammarella@student.univaq.it
+* [YouTube](https://www.youtube.com/watch?v=KfEGCJoeCmY)
 
 # About software:
 The software is based on a finite state machine. The DMX channel are assegnable to each light.
