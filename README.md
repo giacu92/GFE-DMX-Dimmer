@@ -1,4 +1,4 @@
-# DMX-Dimmer
+# DMX-Dimmer (currently under update..)
 DIY 12 channels dmx dimmer for 4 stage halogen lights
 
 * Author: Giacomo Mammarella
