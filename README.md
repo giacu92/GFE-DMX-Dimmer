@@ -6,7 +6,13 @@ DIY 12 channels dmx dimmer for 4 stage halogen lights
 * [YouTube](https://www.youtube.com/watch?v=KfEGCJoeCmY): testing video
 
 # About software:
-The software is based on a finite state machine. The DMX channel are assegnable to each light.
+The software is based on a finite state machine. The DMX start address can be choosen on the software  modifying "#define DMX_START_ADDRESS 65".
+The DMX channels are currently set like following:
+* DMX CHANNEL 65: lamp 1 dimmer (0 -> 100% fade)
+* DMX CHANNEL 66: lamp 2 dimmer 
+* DMX CHANNEL 67: lamp 3 dimmer 
+* DMX CHANNEL 68: lamp 4 dimmer 
+* DMX CHANNEL 69: strobo all lamps at chosen speed (0 to 1s)
 
 # File list:
 * [DMX_dimmer.brd](https://github.com/giacu92/DMX-Dimmer/blob/master/DMX_dimmer.brd): the Cadsoft Eagle 6.5 board file.
