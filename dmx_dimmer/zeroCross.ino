@@ -3,10 +3,11 @@ void zeroCrossInterupt()
   startZeroTime = micros();
   dmx_state = DMX_IDLE;
   
-  for(int ch=0; ch<4; ch++)
+  for(int ch=0; ch<DMX_NUM_FIXTURES; ch++)
   {
     zeroCross[ch]=true;
     brightness[ch]=map(dmx_data[ch],0,255,9700,0); //mapping the delay time from 0 to 9700us, max theorical was 10.000us (half sinewave)
+    period = 10e9;
   }
   
   if(dmx_data[4] > 3)

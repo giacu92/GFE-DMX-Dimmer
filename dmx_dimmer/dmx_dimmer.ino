@@ -1,6 +1,7 @@
+#define DMX_START_ADDRESS 65
+
 #define DMX_NUM_CHANNELS 5
 #define DMX_NUM_FIXTURES 4
-#define DMX_START_ADDRESS 65
 
 enum
 {
@@ -21,10 +22,10 @@ boolean zeroCross[] = {false, false, false, false};
 int brightness[4];
 int period;
 
-unsigned char dmx_pin[DMX_NUM_FIXTURES] = {6, 7, 8, 12}; //{6, 6, 6, 7, 7, 7, 8, 8, 8, 12, 12, 12}; //led pins
+unsigned char dmx_pin[DMX_NUM_FIXTURES] = {6, 7, 8, 12}; 
 unsigned char dmx_data[DMX_NUM_CHANNELS]; //hold the dmx data
 
-volatile unsigned char update; //whan to update pins
+volatile unsigned char update; //flag
 
 void setup()
 {
@@ -55,12 +56,5 @@ void loop()
     dimmer();
 
     strobo();
-    /*
-      // no dimmer yet for now, just testing leds' fading capabilities
-      for (int i=0; i<DMX_NUM_CHANNELS; i++)
-      {
-      //int val = map(dmx_data[i], 0, , 0, 1023);
-      analogWrite(dmx_pin[i], dmx_data[i]);
-      }*/
   }
 }
