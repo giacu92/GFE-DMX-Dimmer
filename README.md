@@ -21,3 +21,7 @@ The DMX channels are currently set like following:
 
 # Connections:
 ![Board](http://i66.tinypic.com/nwhfls.png)
+
+# Some pics:
+Painting the enclosure and test fitting the pcb:
+![PIC1](http://i67.tinypic.com/mtaux3.jpg)
