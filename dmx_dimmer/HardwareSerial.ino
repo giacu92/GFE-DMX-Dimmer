@@ -28,7 +28,7 @@ ISR(USART_RX_vect)
 
     case DMX_START: //ignore the dmx address not equal to device_address
       dmx_addr++;
-      if (dmx_addr == dmx_start_addr) //the next DMX_NUM_CHANNELS bytes we need, store 'em and goto RUN
+      if (dmx_addr == DMX_START_ADDRESS) //the next DMX_NUM_CHANNELS bytes we need, store 'em and goto RUN
       {
         chan_cnt = 0;
         dmx_data[chan_cnt++] = data;

@@ -1,5 +1,6 @@
 #define DMX_NUM_CHANNELS 5
 #define DMX_NUM_FIXTURES 4
+#define DMX_START_ADDRESS 65
 
 enum
 {
@@ -11,7 +12,7 @@ enum
 
 volatile unsigned char dmx_state;
 
-unsigned int dmx_start_addr = 65; //start address for the DMX frame to be interpreted
+//unsigned int dmx_start_addr = 65; //start address for the DMX frame to be interpreted
 unsigned int dmx_addr;            //current address of the DMX frame
 
 unsigned long startZeroTime = 0;
