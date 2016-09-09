@@ -44,6 +44,7 @@ You can find my copy of modded _HardwareSerial0.cpp_ inside the file list.
 * [DMX_dimmer.brd](https://github.com/giacu92/DMX-Dimmer/blob/master/DMX_dimmer.brd): the Cadsoft Eagle 6.5 board file.
 * [DMX_dimmer.sch](https://github.com/giacu92/DMX-Dimmer/blob/master/DMX_dimmer.sch): the Cadsoft Eagle 6.5 schematic file for the board.
 * [dmx_dimmer.ino](https://github.com/giacu92/DMX-Dimmer/blob/master/dmx_dimmer.ino): the Arduino sketch for the project.
+* [HardwareSerial0.cpp](https://github.com/giacu92/DMX-Dimmer/blob/master/HardwareSerial0.cpp): The **MODIFIED** _HardwareSerial0.cpp_ for uploading the code
 
 # Connections:
 ![Board](http://i66.tinypic.com/nwhfls.png)
