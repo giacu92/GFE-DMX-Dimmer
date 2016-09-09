@@ -15,9 +15,9 @@ The DMX channels are currently set like following:
 * DMX CHANNEL 69: strobo all lamps at chosen speed (0 to 1s)
 
 # _HardwareSerial0.cpp EDIT:_
-To let Arduino IDE comile the code we need to do some mods to the _HardwareSerial0.cpp_ file.
+To let Arduino IDE compile the code we need to do some mods to the _HardwareSerial0.cpp_ file.
 On my current Mac OSX Arduino version (1.6.10) the file is placed at the following path:
-**Arduino/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial0**.
+**Arduino/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial0.cpp**.
 Inside it we need to comment out the whole block between line 40 and line 51:
 ```
 /*
