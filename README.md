@@ -14,6 +14,31 @@ The DMX channels are currently set like following:
 * DMX CHANNEL 68: lamp 4 dimmer 
 * DMX CHANNEL 69: strobo all lamps at chosen speed (0 to 1s)
 
+# _HardwareSerial0 EDIT:_
+To let Arduino IDE comile the code we need to do some mods to the HardwareSerial.cpp file inside:
+**Arduino/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial0**.
+We need to comment out the whole block between line 40 and line 51:
+```
+/*
+#if defined(USART_RX_vect)
+  ISR(USART_RX_vect)
+#elif defined(USART0_RX_vect)
+  ISR(USART0_RX_vect)
+#elif defined(USART_RXC_vect)
+  ISR(USART_RXC_vect) // ATmega8
+#else
+  #error "Don't know what the Data Received vector is called for Serial"
+#endif
+  {
+    Serial._rx_complete_irq();
+  }
+*/
+```
+That's because we have to tell the Arduino IDE that inside the code we wrote our personal Interrupt Service Routine ("ISR") and we need it to use it in DMX serial communications.
+Remember to remove comments after uploading the code or USB serial communications will be compromised.
+
+You can find my copy of modded _HardwareSerial0.cpp_ inside the file list.
+
 # File list:
 * [DMX_dimmer.brd](https://github.com/giacu92/DMX-Dimmer/blob/master/DMX_dimmer.brd): the Cadsoft Eagle 6.5 board file.
 * [DMX_dimmer.sch](https://github.com/giacu92/DMX-Dimmer/blob/master/DMX_dimmer.sch): the Cadsoft Eagle 6.5 schematic file for the board.
