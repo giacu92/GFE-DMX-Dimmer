@@ -1,4 +1,4 @@
-#define DMX_START_ADDRESS 65
+#define DMX_START_ADDRESS 65 //start address for the DMX frame to be interpreted
 
 #define DMX_NUM_CHANNELS 5
 #define DMX_NUM_FIXTURES 4
@@ -12,15 +12,13 @@ enum
 };
 
 volatile unsigned char dmx_state;
-
-//unsigned int dmx_start_addr = 65; //start address for the DMX frame to be interpreted
 unsigned int dmx_addr;            //current address of the DMX frame
 
 unsigned long startZeroTime = 0;
 unsigned long timeElapsed = 0; //Time until end of cycle
 boolean zeroCross[] = {false, false, false, false};
 int brightness[4];
-int period;
+int period = 0;
 
 unsigned char dmx_pin[DMX_NUM_FIXTURES] = {6, 7, 8, 12}; 
 unsigned char dmx_data[DMX_NUM_CHANNELS]; //hold the dmx data
@@ -34,7 +32,7 @@ void setup()
 
   delay(500);
 
-  attachInterrupt(1, zeroCrossInterupt, FALLING);
+  attachInterrupt(digitalPinToInterrupt(3), zeroCrossInterrupt, FALLING);
 
   for (int i = 0; i < DMX_NUM_FIXTURES; i++)
   {
