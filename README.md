@@ -15,9 +15,10 @@ The DMX channels are currently set like following:
 * DMX CHANNEL 69: strobo all lamps at chosen speed (0 to 1s)
 
 # _HardwareSerial0 EDIT:_
-To let Arduino IDE comile the code we need to do some mods to the HardwareSerial.cpp file inside:
+To let Arduino IDE comile the code we need to do some mods to the _HardwareSerial0.cpp_ file.
+On my current Mac OSX Arduino version (1.6.10) the file is placed at the following path:
 **Arduino/Contents/Java/hardware/arduino/avr/cores/arduino/HardwareSerial0**.
-We need to comment out the whole block between line 40 and line 51:
+Inside it we need to comment out the whole block between line 40 and line 51:
 ```
 /*
 #if defined(USART_RX_vect)
@@ -34,8 +35,8 @@ We need to comment out the whole block between line 40 and line 51:
   }
 */
 ```
-That's because we have to tell the Arduino IDE that inside the code we wrote our personal Interrupt Service Routine ("ISR") and we need it to use it in DMX serial communications.
-Remember to remove comments after uploading the code or USB serial communications will be compromised.
+That's because we need to tell the Arduino IDE that inside the code we wrote our personal Interrupt Service Routine ("ISR") and we need it to use it in DMX serial communications.
+Remember to remove the mods after uploading the code or Serial communications (like the one we use in Serial.printl()) wont work anymore.
 
 You can find my copy of modded _HardwareSerial0.cpp_ inside the file list.
 
