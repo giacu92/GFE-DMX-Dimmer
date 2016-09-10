@@ -36,14 +36,14 @@ Inside it we need to comment out the whole block between line 40 and line 51:
 */
 ```
 That's because we need to tell the Arduino IDE that inside the code we wrote our personal Interrupt Service Routine ("ISR") and we need it to use it in DMX serial communications.
-Remember to remove the mods after uploading the code or Serial communications (like the one we use in Serial.printl()) wont work anymore.
+Remember to remove the mods after uploading the code or Serial communications ( like the one we use in Serial.print() ) wont work anymore.
 
 You can find my copy of modded _HardwareSerial0.cpp_ inside the file list.
 
 # File list:
 * [DMX_dimmer.brd](https://github.com/giacu92/DMX-Dimmer/blob/master/DMX_dimmer.brd): the Cadsoft Eagle 6.5 board file.
 * [DMX_dimmer.sch](https://github.com/giacu92/DMX-Dimmer/blob/master/DMX_dimmer.sch): the Cadsoft Eagle 6.5 schematic file for the board.
-* [dmx_dimmer.ino](https://github.com/giacu92/DMX-Dimmer/blob/master/dmx_dimmer.ino): the Arduino sketch for the project.
+* [Code](https://github.com/giacu92/DMX-Dimmer/tree/master/dmx_dimmer): the folder containingh the sketch for the project.
 * [HardwareSerial0.cpp](https://github.com/giacu92/DMX-Dimmer/blob/master/HardwareSerial0.cpp): The **MODIFIED** _HardwareSerial0.cpp_ for uploading the code
 
 # Connections:
