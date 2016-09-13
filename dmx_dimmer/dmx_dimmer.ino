@@ -17,7 +17,7 @@ unsigned int dmx_addr;            //current address of the DMX frame
 unsigned long startZeroTime = 0;
 unsigned long timeElapsed = 0; //Time until end of cycle
 boolean zeroCross[] = {false, false, false, false};
-int brightness[4];
+int brightness[DMX_NUM_FIXTURES];
 int period = 0;
 
 unsigned char dmx_pin[DMX_NUM_FIXTURES] = {6, 7, 8, 12}; 
@@ -47,12 +47,16 @@ void setup()
 
 void loop()
 {
-  if (update)
+  dimmer();
+
+  strobo();
+
+  
+  /*for (int i=0; i<DMX_NUM_FIXTURES; i++)
   {
-    update = 0;
-
-    dimmer();
-
-    strobo();
-  }
+    if (dmx_data[i] > 127)
+      digitalWrite(dmx_pin[i], HIGH);
+    else
+      digitalWrite(dmx_pin[i], LOW);
+  }*/
 }

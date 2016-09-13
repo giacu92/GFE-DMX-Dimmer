@@ -6,9 +6,10 @@ int strobo() //return period for debugging
 {
   timeElapsed = micros() - startZeroTime;
 
+  //period = 500000;
   if (timeElapsed > period)
   {
-    detachInterrupt(zeroCrossInterrupt);
+    //detachInterrupt(zeroCrossInterrupt);
     
     digitalWrite(dmx_pin[0], HIGH);  // fire the Triac 1
     digitalWrite(dmx_pin[1], HIGH);  // fire the Triac 2

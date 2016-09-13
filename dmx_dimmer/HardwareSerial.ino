@@ -11,7 +11,6 @@ ISR(USART_RX_vect)
       {
         dmx_addr = 0;
         dmx_state = DMX_BREAK;
-        update = 1;
       }
       break;
 
