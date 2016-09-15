@@ -3,7 +3,8 @@ DIY 5 channels dmx dimmer for 4 stage halogen lights
 
 * Author: Giacomo Mammarella
 * email: giacomo.mammarella@student.univaq.it
-* [YouTube](https://www.youtube.com/watch?v=KfEGCJoeCmY): testing video
+* [YouTube video test 1](https://www.youtube.com/watch?v=KfEGCJoeCmY): testing video n1: lamp test
+* [YouTube video test 2](https://www.youtube.com/watch?v=TXi1G5LvkLE): testing video n2: strobe and dimming
 
 # About software:
 The software is based on a finite state machine. The DMX start address can be choosen on the software  modifying "#define DMX_START_ADDRESS 65".
@@ -12,7 +13,7 @@ The DMX channels are currently set like following:
 * DMX CHANNEL 66: lamp 2 dimmer 
 * DMX CHANNEL 67: lamp 3 dimmer 
 * DMX CHANNEL 68: lamp 4 dimmer 
-* DMX CHANNEL 69: strobo all lamps at chosen speed (0 to 1s)
+* DMX CHANNEL 69: strobo all lamps at chosen speed (40 - 255 strobe from 100ms to 1s)
 
 # _HardwareSerial0.cpp EDIT:_
 To let Arduino IDE compile the code we need to do some mods to the _HardwareSerial0.cpp_ file.
