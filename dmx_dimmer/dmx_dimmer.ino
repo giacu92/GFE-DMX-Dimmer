@@ -24,6 +24,7 @@ unsigned char dmx_pin[DMX_NUM_FIXTURES] = {6, 7, 8, 12};
 unsigned char dmx_data[DMX_NUM_CHANNELS]; //hold the dmx data
 
 volatile unsigned char update; //flag
+volatile bool strobe = false;
 
 void setup()
 {
@@ -47,12 +48,14 @@ void setup()
 
 void loop()
 {
-  dimmer();
-
-  strobo();
+  if(!strobe)
+    dimmer();
+  else
+    strobo();
 
   
-  /*for (int i=0; i<DMX_NUM_FIXTURES; i++)
+  /*
+  for (int i=0; i<DMX_NUM_FIXTURES; i++)
   {
     if (dmx_data[i] > 127)
       digitalWrite(dmx_pin[i], HIGH);
