@@ -1,5 +1,7 @@
 # DMX-Dimmer (currently under update..)
-DIY 5 channels dmx dimmer for 4 stage halogen lights
+DIY 5 channels dmx dimmer for 4 stage halogen lights.
+
+Get the full assembled board: [http://gfehandmade.bigcartel.com/product/dmx-dimmer-for-4-stage-halogen-lamps](http://gfehandmade.bigcartel.com/product/dmx-dimmer-for-4-stage-halogen-lamps)
 
 * Author: Giacomo Mammarella
 * email: giacomo.mammarella@student.univaq.it
@@ -48,7 +50,7 @@ You can find my copy of modded _HardwareSerial0.cpp_ inside the file list.
 * [HardwareSerial0.cpp](https://github.com/giacu92/DMX-Dimmer/blob/master/HardwareSerial0.cpp): The **MODIFIED** _HardwareSerial0.cpp_ for uploading the code
 
 # Connections:
-![Board](http://i66.tinypic.com/nwhfls.png)
+![Board](http://i68.tinypic.com/o8cvo3.png)
 
 # Some pics:
 Painting the enclosure and test fitting the pcb:
