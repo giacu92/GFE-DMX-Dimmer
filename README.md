@@ -1,7 +1,7 @@
-# DMX-Dimmer (currently under update..)
+# DMX-Dimmer
 DIY 5 channels dmx dimmer for 4 stage halogen lights.
 
-Get the full assembled board: [http://gfehandmade.bigcartel.com/product/dmx-dimmer-for-4-stage-halogen-lamps](http://gfehandmade.bigcartel.com/product/dmx-dimmer-for-4-stage-halogen-lamps)
+Get the full assembled board: [http://gfehandmade.bigcartel.com/product/dmx-dimmer-for-4-stage-halogen-lamps](http://giacu92.bigcartel.com/product/dmx-dimmer-for-4-stage-halogen-lamps)
 
 * Author: Giacomo Mammarella
 * email: giacomo.mammarella@student.univaq.it
