@@ -4,7 +4,7 @@ DIY 5 channels dmx dimmer for 4 stage halogen lights.
 Get the full assembled board: [http://gfehandmade.bigcartel.com/product/dmx-dimmer-for-4-stage-halogen-lamps](http://giacu92.bigcartel.com/product/dmx-dimmer-for-4-stage-halogen-lamps)
 
 * Author: Giacomo Mammarella
-* email: giacomo.mammarella@student.univaq.it
+* email: giacu92@gmail.com
 * [YouTube video test 1](https://www.youtube.com/watch?v=KfEGCJoeCmY): testing video n1: lamp test
 * [YouTube video test 2](https://www.youtube.com/watch?v=TXi1G5LvkLE): testing video n2: strobe and dimming
 
